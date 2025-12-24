@@ -1,0 +1,22 @@
+{
+  "name": "cypress-automation-2025",
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "braveTest": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/Day1_121525/brave-search.cy.js'",
+    "braveTestHeadless": "npx cypress run --browser chrome --spec 'cypress/e2e/ActionItem/brave-search.cy.js'",
+    "uspsActionItem": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/Action_Item/USPS_Action_Item.cy.js'",
+    "tdBank": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/Action_Item/TD_Bank.cy.js'",
+    "actionItemTest": "npx cypress run --headed --browser chrome --spec 'cypress/e2e/Action_Item/*.cy.js'"
+  },
+  "devDependencies": {
+    "cypress-mochawesome-reporter": "^4.0.2",
+    "cypress-real-events": "^1.15.0",
+    "cypress-xpath": "^2.0.1",
+    "mochawesome": "^7.1.4"
+  }
+}
